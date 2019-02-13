@@ -1,0 +1,172 @@
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+h3 {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  text-align: center;
+  color: #999;
+  font-size: 0.9em;
+}
+
+header{
+  max-width: 96%;
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+ul {
+  list-style-type: none;
+  max-width: 100%;
+  padding: 0;
+}
+
+li {
+  text-align: center;
+  margin: 5px 0;
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+li a {
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+  color: #333
+}
+
+header p {
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+main {
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px 0;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+footer p {
+  max-width: 90%;
+  margin: 10px auto;
+  line-height: 1.5em;
+}
+
+.portrait {
+  display: block;
+  max-width: 60%;
+  margin: 30px auto;
+}
+
+.project {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.project p {
+  max-width: 90%;
+  text-align: center;
+  margin: auto;
+  line-height: 1.5em;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#portfolio {
+  padding-bottom: 10px;
+}
+
+.footborder {
+  max-width: 90%;
+  margin: 30px auto 20px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
+.footborder nav {
+  display: none;
+}
+
+.backtotop {
+  float: right;
+  margin: 23px 0;
+}
+
+.footborder h3 {
+  float: left;
+  margin: 22px 0;
+}
+
+.contact-detail {
+  font-weight: bold;
+  color: #666;
+}
+
+.skills {
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px 0;
+  border-top: 1px solid #f2f2f2;
+}
+
+.skillcard ul {
+  list-style-type: none;
+  max-width: 80%;
+  margin: auto;
+  padding: 0;
+}
+
+.skillcard li {
+  text-align: center;
+  margin: 16px 0;
+  background: #6a3093;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 20px 0;
+  border-radius: 4px;
+  color: white;
+}
+
+.skillcard li:hover {
+  background: #C02425;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transform: scale(1.02);
+  transition: all .1s ease-in-out;
+}
