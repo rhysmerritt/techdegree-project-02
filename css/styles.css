@@ -50,10 +50,19 @@ li {
   padding: 10px 0;
 }
 
+li:hover {
+  transform: scale(1.02);
+  transition: all .1s ease-in-out;
+}
+
 li a {
   text-decoration: none;
   font-family: 'Roboto Mono', monospace;
   color: #333
+}
+
+li a:hover {
+  text-decoration: underline;
 }
 
 header p {
@@ -79,6 +88,10 @@ footer p {
   margin: 10px auto;
   line-height: 1.5em;
 }
+
+/* =================================
+  Classes
+==================================== */
 
 .portrait {
   display: block;
@@ -106,9 +119,6 @@ footer p {
   clear: both;
 }
 
-#portfolio {
-  padding-bottom: 10px;
-}
 
 .footborder {
   max-width: 90%;
@@ -145,6 +155,10 @@ footer p {
   border-top: 1px solid #f2f2f2;
 }
 
+.skills h2 {
+  margin-bottom: 40px;
+}
+
 .skillcard ul {
   list-style-type: none;
   max-width: 80%;
@@ -154,6 +168,7 @@ footer p {
 
 .skillcard li {
   text-align: center;
+  font-family: 'Roboto Mono', monospace;
   margin: 16px 0;
   background: #6a3093;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
@@ -168,5 +183,178 @@ footer p {
   background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   transform: scale(1.02);
-  transition: all .1s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#contact {
+  margin-bottom: 40px;
+}
+
+#portfolio {
+  margin-bottom: 40px;
+}
+
+/* =================================
+  Media Queries (tablet)
+==================================== */
+
+@media (min-width: 768px) {
+
+header {
+  text-align: center;
+}
+
+nav {
+  display: block;
+}
+
+li {
+  background-color: #cccccc2e;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 40px;
+}
+li a {
+  display: inline-block;
+}
+
+.twocolumn {
+  max-width: 90%;
+  margin: auto;
+}
+
+.project {
+  width: 50%;
+  float: left;
+  padding: 10px 10px 50px 10px;
+}
+
+.project p {
+  min-height: 70px;
+}
+
+header img{
+  float: right;
+  width: 40%;
+  padding-bottom: 50px;
+  max-width: none;
+}
+
+header p {
+  float: left;
+  width: 50%;
+  margin-left: 20px;
+  text-align: left;
+  padding-right: 10px;
+  padding-top: 30px;
+  font-size: 1.3em;
+}
+
+.backtotop {
+  display: none;
+}
+
+.skillcard li {
+  display: block;
+}
+
+.skillcard ul {
+  max-width: 50%;
+}
+
+.skillcard {
+  padding-bottom: 20px;
+}
+
+footer p {
+  max-width: 60%;
+}
+
+.footborder nav {
+  padding-top: 7px;
+  display: inline-block;
+  list-style-type: none;
+  float: right;
+}
+
+.footborder li {
+  padding: 0;
+  margin: 0 10px;
+  background-color: #f9f9f9;
+}
+}
+
+/* =================================
+  Media Queries (Desktop)
+==================================== */
+
+@media (min-width: 1024px) {
+
+header {
+  margin: 30px auto 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+}
+
+li a {
+  text-decoration: underline;
+}
+
+header h1 {
+  float: left;
+  margin: 20px;
+}
+
+header nav {
+  float: right;
+  margin: 20px 0 0 0;
+}
+
+header ul {
+  margin: 0;
+}
+
+header p {
+  padding-top: 0;
+  margin-top: 40px;
+}
+
+.portrait {
+  float: right;
+  max-width: 60%;
+  margin: 60px 10px 0 0;
+}
+
+main {
+  width: 95%;
+  margin: auto;
+}
+
+#portfolio {
+  margin: 40px auto;
+}
+
+.twocolumn {
+    max-width: 97%;
+    margin: auto;
+}
+
+.project {
+  width: 33%;
+  display: inline-block;
+  padding: 10px 10px 50px 10px;
+}
+
+.skills {
+  width: 95%;
+  margin: auto;
+}
+
+footer p {
+  max-width: 50%;
+}
+
 }
